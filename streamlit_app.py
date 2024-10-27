@@ -123,19 +123,19 @@ Here’s the user's question: '{user_question}'
     with col1:
         if st.button("Reommend Diet 🥗"):
             st.session_state.current_page = 'Diet Recommendations'
-            st.experimental_rerun()
+            st.rerun()
 
     # Button for Disease Detector
     with col2:
         if st.button("Detect Disease🦠"):
             st.session_state.current_page = 'Disease Detector'
-            st.experimental_rerun()
+            st.rerun()
 
     # Button for Exercise Recommender
     with col3:
         if st.button("Plan Workout 🏋️"):
             st.session_state.current_page = 'Exercise Recommender'
-            st.experimental_rerun()
+            st.rerun()
 
     # Second row of buttons
     col4, col5, col6 = st.columns(3)
@@ -143,18 +143,18 @@ Here’s the user's question: '{user_question}'
     with col4:
         if st.button("Mental Health Bot 🧠"):
             st.session_state.current_page = 'Mental Health Bot'
-            st.experimental_rerun()
+            st.rerun()
 
     with col5:
         if st.button("Calculate Food Nutrients 🍽️"):
             st.session_state.current_page = 'Food Nutrient Calculator'
-            st.experimental_rerun()
+            st.rerun()
 
     # Add additional buttons as needed
     with col6:
         if st.button("Take Health Assessment📋"):
             st.session_state.current_page = 'Health Quiz'
-            st.experimental_rerun()
+            st.rerun()
 
 
     random_fact = random.choice(health_facts)
