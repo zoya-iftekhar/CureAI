@@ -1,5 +1,4 @@
-streamlit==1.18.0
-google-generativeai==0.8.3 # Make sure to check the latest version
-Pillow==11.0.0  # For image handling
-requests==2.26.0  # For making HTTP requests (if needed)
-altair==5.4.1
+streamlit
+google-generativeai
+altair
+Pillow
