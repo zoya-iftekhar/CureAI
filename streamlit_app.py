@@ -4,6 +4,7 @@ import random
 import requests
 from PIL import Image
 # Configure Gemini API
+api_key = "AIzaSyCng9o5BRpAOT5AOy-22Xrs4OM1oRiAKvU" 
 genai.configure(api_key=api_key)
 
 # Create the model configuration
