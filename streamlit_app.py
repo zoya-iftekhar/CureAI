@@ -3,8 +3,6 @@ import google.generativeai as genai
 import random
 import requests
 from PIL import Image
-
-api_key = "AIzaSyCng9o5BRpAOT5AOy-22Xrs4OM1oRiAKvU" 
 # Configure Gemini API
 genai.configure(api_key=api_key)
 
@@ -459,7 +457,7 @@ def mental_health_bot():
             bot_message = f"<div style='text-align: left; color: #388e3c; border-radius: 15px; padding: 10px; background-color: #c8e6c9; margin-bottom: 10px;'>Zoe: {response}</div>"
             st.session_state.chat_history[-1]['bot'] = bot_message
 
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.warning("Please enter your message.")
 
