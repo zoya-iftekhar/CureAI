@@ -81,7 +81,7 @@ Here’s the user's question: '{user_question}'
     # If the user submits a question, get the response from Gemini
     if user_question:
         response = get_gemini_response(health_prompt)  # This should call your Gemini API function
-        st.write("**Response from MedAssist:**")
+        st.write("**Response from CureAI:**")
         st.write(response)
 
 
