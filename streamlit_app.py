@@ -53,7 +53,7 @@ if 'current_page' not in st.session_state:
 # Function for the home page
 def home():
     st.markdown(
-        "<h1 style='text-align: center; color: #4CAF50;'>Welcome to CureAI 🩺</h1>",
+        "<h1 style='text-align: center; color: #4CAF50;'>Welcome to CureAI </h1>",
         unsafe_allow_html=True
     )
     
@@ -478,7 +478,7 @@ def mental_health_bot():
     # Start New Conversation button
     if st.button("Start New Conversation"):
         st.session_state.chat_history = []
-        st.experimental_rerun()
+        st.rerun()
     navigation_buttons()
 
 
