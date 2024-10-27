@@ -602,7 +602,7 @@ def navigation_buttons():
     st.write("\n### Navigation")
     if st.button("Go to Home 🏠"):
         st.session_state.current_page = 'Home'
-        st.experimental_rerun()
+        st.rerun()
 
 
 # Render the current page based on the button clicked
